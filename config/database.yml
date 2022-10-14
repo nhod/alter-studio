@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: alter_studio_production
-  username: alter_studio
-  password: <%= ENV['ALTER_STUDIO_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
